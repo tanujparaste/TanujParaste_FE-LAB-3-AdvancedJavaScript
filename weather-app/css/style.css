@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url("../images/paul-earle-wVjd0eWNqI8-unsplash-img.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 100vw;
+  height: 100vh;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.weather-info,
+.location-date,
+.weather-type {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 50px 1fr;
+  row-gap: 6rem;
+}
+
+.weather-info {
+  height: 100%;
+  padding: 5rem;
+  color: #fff;
+}
+
+.weather-report {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  row-gap: 2rem;
+}
+
+.location-date,
+.weather-type {
+  grid-template-rows: 1fr 1fr;
+  row-gap: 0.5rem;
+}
+
+.current-temp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.location {
+  font-size: 2.5rem;
+}
+
+.date {
+  font-size: 1.5rem;
+}
+
+.curr-temp {
+  font-size: 6rem;
+  font-weight: bold;
+  text-shadow: 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.weather {
+  font-size: 2rem;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.min-max-temp {
+  font-size: 1.5rem;
+}
+
+.curr-temp,
+.weather,
+.min-max-temp {
+  letter-spacing: 1.5px;
+}
+
+.search {
+  font-size: 1.5rem;
+  padding: 0 1rem;
+  outline: none;
+  border: none;
+  border-top-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  box-shadow: 0px 5px 1px 0px rgba(255, 132, 0, 0.75);
+}
+
+.hidden-box {
+  display: none;
+  font-size: 1.5rem;
+}

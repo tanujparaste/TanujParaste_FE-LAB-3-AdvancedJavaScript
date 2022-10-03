@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.11.5/dayjs.min.js"
+      integrity="sha512-Ot7ArUEhJDU0cwoBNNnWe487kjL5wAOsIYig8llY/l0P2TUFwgsAHVmrZMHsT8NGo+HwkjTJsNErS6QqIkBxDw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="overlay">
+      <div class="weather-info">
+        <input
+          class="search"
+          type="text"
+          autocomplete="on"
+          placeholder="Search for a city..."
+        />
+        <article class="weather-report">
+          <section class="location-date">
+            <p class="location"></p>
+            <p class="date"></p>
+          </section>
+          <section class="current-temp">
+            <p class="curr-temp"></p>
+          </section>
+          <section class="weather-type">
+            <p class="weather"></p>
+            <p class="min-max-temp"></p>
+          </section>
+        </article>
+        <section class="hidden-box"></section>
+      </div>
+    </div>
+    <script src="scripts/app.js"></script>
+  </body>
+</html>
